@@ -1,0 +1,11 @@
+package org.example;
+
+public final class App {
+    private App() {
+    }
+
+    public static void main(String[] args) {
+        IVendingMachine vendingMachine = VendingMachineImpl.createDefault();
+        new ConsoleUI(vendingMachine).run();
+    }
+}
